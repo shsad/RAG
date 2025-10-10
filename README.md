@@ -63,7 +63,26 @@ Once *WSL* is installed and set up, you can continue with the installation steps
 
 ---
 
-1. Download or clone the repository.
+1. Clone or download the repository.
+
+Option A: Clone with Git
+
+First, open a terminal and navigate to the directory where you want to store this project:
+
+```shell
+$ cd path/to/your/projects/
+```
+
+Then clone this repository and enter it.
+
+```shell
+$ git clone https://github.com/aihpi/ragsst.git
+$ cd ragsst
+```
+
+Option B: Download manually
+
+If you don't have Git installed, you can click "Code --> Download ZIP" on the Github repository page and then unzip it to your desired location. Unzip it and navigate to this location in the terminal. 
 
 2. Ensure that *uv* is installed.
 
@@ -210,3 +229,4 @@ $ export LOG_LEVEL='DEBUG'
 ## License
 
 [GPLv3](./LICENSE)
+
