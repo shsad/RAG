@@ -673,7 +673,7 @@ def make_interface(ragsst: RAGTool) -> Any:
     gui = gr.TabbedInterface(
         [rag_query_ui, semantic_retrieval_ui, rag_chat_ui, chat_ui, multi_query_ui, rag_fusion_ui, decomposition_ui, hyde_ui, config_ui],
         ["RAG Query", "Semantic Retrieval", "RAG Chat", "Chat", "Multi Query RAG", "RAG Fusion", "Decomposition RAG", "HyDE RAG", "Rag Tool Settings"],
-        title="<a href='https://github.com/aihpi/ragsst' target='_blank'>Local RAG Tool</a>",
+        title="<a href='https://github.com/aihpi/workshop-rag' target='_blank'>Local RAG Tool</a>",
     )
 
     return gui
