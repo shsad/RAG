@@ -138,7 +138,9 @@ dependencies = [
     "tomli==2.2.1",
     "tomlkit==0.12.0",
     # PyTorch - will automatically select appropriate version based on platform
-    "torch==2.7.1",
+    # Note: torch 2.7.1 does not support macOS Intel (x86_64), only macOS ARM (Apple Silicon)
+    "torch==2.7.1; sys_platform != 'darwin' or platform_machine != 'x86_64'",
+    "torch==2.5.1; sys_platform == 'darwin' and platform_machine == 'x86_64'",
     # Triton only for CUDA platforms (x86_64 architecture only)
     "triton==3.3.1; (sys_platform == 'linux' or sys_platform == 'win32') and platform_machine == 'x86_64'",
     "tqdm==4.67.1",
